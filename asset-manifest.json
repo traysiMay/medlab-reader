@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/medlab-reader/static/css/main.34de6062.chunk.css",
+    "main.js": "/medlab-reader/static/js/main.6eb64ec7.chunk.js",
+    "main.js.map": "/medlab-reader/static/js/main.6eb64ec7.chunk.js.map",
+    "runtime~main.js": "/medlab-reader/static/js/runtime~main.0df5e83c.js",
+    "runtime~main.js.map": "/medlab-reader/static/js/runtime~main.0df5e83c.js.map",
+    "static/js/2.7e4d6093.chunk.js": "/medlab-reader/static/js/2.7e4d6093.chunk.js",
+    "static/js/2.7e4d6093.chunk.js.map": "/medlab-reader/static/js/2.7e4d6093.chunk.js.map",
+    "index.html": "/medlab-reader/index.html",
+    "precache-manifest.e8277d5a2aac70df050b83e72062b042.js": "/medlab-reader/precache-manifest.e8277d5a2aac70df050b83e72062b042.js",
+    "service-worker.js": "/medlab-reader/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/medlab-reader/static/css/main.34de6062.chunk.css.map"
+  }
+}
