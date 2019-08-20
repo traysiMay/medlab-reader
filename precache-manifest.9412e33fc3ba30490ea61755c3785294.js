@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd66592f05c04e05bbe832296be96d94",
+    "revision": "0aacf72c07349b73fc5c0c1f4d899beb",
     "url": "/medlab-reader/index.html"
   },
   {
-    "revision": "c880bf13f51c92a7ec5c",
+    "revision": "a37d184ed03599b3c247",
     "url": "/medlab-reader/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "debcb84a96177a81ef99",
-    "url": "/medlab-reader/static/js/2.7e4d6093.chunk.js"
+    "revision": "ca5accd1db3c86e73c42",
+    "url": "/medlab-reader/static/js/2.7ae37dc1.chunk.js"
   },
   {
-    "revision": "c880bf13f51c92a7ec5c",
-    "url": "/medlab-reader/static/js/main.6eb64ec7.chunk.js"
+    "revision": "a37d184ed03599b3c247",
+    "url": "/medlab-reader/static/js/main.a9b24ef3.chunk.js"
   },
   {
     "revision": "8a32ec01f09d3fe5dc2b",

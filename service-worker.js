@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/medlab-reader/precache-manifest.e8277d5a2aac70df050b83e72062b042.js"
+  "/medlab-reader/precache-manifest.9412e33fc3ba30490ea61755c3785294.js"
 );
 
 self.addEventListener('message', (event) => {
