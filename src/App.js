@@ -16,7 +16,7 @@ function App() {
 
 
   const auth = () => {
-    const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username: "admin", password: "admin" }) }
+    const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username: "reader", password: "reader" }) }
     fetch(SERVER_ENDPOINT + "/auth/login", options).then(response => response.json()).then(data => {
       setToken(data.token)
       localStorage.setItem('ttoken', data.token)
