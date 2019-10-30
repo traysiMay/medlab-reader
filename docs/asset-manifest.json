@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.34de6062.chunk.css",
-    "main.js": "/static/js/main.712e6504.chunk.js",
-    "main.js.map": "/static/js/main.712e6504.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.470bddd4.js",
-    "runtime~main.js.map": "/static/js/runtime~main.470bddd4.js.map",
-    "static/js/2.530260fe.chunk.js": "/static/js/2.530260fe.chunk.js",
-    "static/js/2.530260fe.chunk.js.map": "/static/js/2.530260fe.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c16818bc26285e8da2b04938fe932420.js": "/precache-manifest.c16818bc26285e8da2b04938fe932420.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.34de6062.chunk.css.map": "/static/css/main.34de6062.chunk.css.map"
+    "main.css": "/medlab-reader/static/css/main.34de6062.chunk.css",
+    "main.js": "/medlab-reader/static/js/main.0e1b2f60.chunk.js",
+    "main.js.map": "/medlab-reader/static/js/main.0e1b2f60.chunk.js.map",
+    "runtime~main.js": "/medlab-reader/static/js/runtime~main.0df5e83c.js",
+    "runtime~main.js.map": "/medlab-reader/static/js/runtime~main.0df5e83c.js.map",
+    "static/js/2.3232f913.chunk.js": "/medlab-reader/static/js/2.3232f913.chunk.js",
+    "static/js/2.3232f913.chunk.js.map": "/medlab-reader/static/js/2.3232f913.chunk.js.map",
+    "index.html": "/medlab-reader/index.html",
+    "precache-manifest.40d85eaba3c23c879c9680127c105001.js": "/medlab-reader/precache-manifest.40d85eaba3c23c879c9680127c105001.js",
+    "service-worker.js": "/medlab-reader/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/medlab-reader/static/css/main.34de6062.chunk.css.map"
   }
 }
