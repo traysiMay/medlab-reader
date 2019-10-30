@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import QrReader from "react-qr-reader";
 import { Button, ButtonContainer, EmailContainer, EmailLine, SearchInput } from './styles'
-const SERVER_ENDPOINT = process.env.NODE_ENV === 'production' ? "http://localhost:4000" : "https://eng.med--lab.org"
+const SERVER_ENDPOINT = process.env.NODE_ENV === 'development' ? "http://localhost:4000" : "https://eng.med--lab.org"
 
 // var n = { method: "POST", headers: { Authorization: "Bearer ".concat(s), "Content-Type": "application/json" }, body: JSON.stringify({ qr: t }) };
 
