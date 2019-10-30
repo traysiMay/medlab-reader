@@ -20,9 +20,12 @@ export const EmailContainer = styled.div`
     margin: auto;
 `
 export const EmailLine = styled.div`
+    font-size:20px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
     &.rsvp {
         text-align: center;
-        font-size: 30px;
         padding:22px;
         text-decoration: ${props => props.boop}
     }

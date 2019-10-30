@@ -8,7 +8,7 @@ const SERVER_ENDPOINT = process.env.NODE_ENV === 'development' ? "http://localho
 function App() {
   const searchRef = useRef('')
   const [result, setResult] = useState("");
-  const [token, setToken] = useState(localStorage.getItem('ttoken'))
+  const [token, setToken] = useState("")
   const [emails, setEmails] = useState([])
   const [matchedEmails, setMatchedEmails] = useState([])
   const [selectedEmail, setSelectedEmail] = useState("")
@@ -18,11 +18,13 @@ function App() {
   const auth = () => {
     const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ username: "reader", password: "reader" }) }
     fetch(SERVER_ENDPOINT + "/auth/login", options).then(response => response.json()).then(data => {
+      console.log(data)
       setToken(data.token)
       localStorage.setItem('ttoken', data.token)
     })
   }
   const getAll = () => {
+    if (!token) return
     const options = { method: "GET", headers: { Authorization: "Bearer ".concat(token), "Content-Type": "application/json" } };
     fetch(SERVER_ENDPOINT + "/user", options).then(response => response.json()).then(data => {
       console.log(data)
@@ -64,13 +66,17 @@ function App() {
   };
 
   useEffect(() => {
-    getAll()
     auth()
   }, [])
+
+  useEffect(() => {
+    getAll()
+
+  }, [token])
   console.log(emails)
   return (
     <div className="App">
-      <Button onClick={auth}>AUTH</Button>
+      {/* <Button onClick={auth}>AUTH</Button> */}
       {/* <Button onClick={getAll}>GETALL</Button> */}
       <SearchInput placeholder="SEARCH" ref={searchRef} onChange={handleInput} />
       <EmailContainer>
