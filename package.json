@@ -2,7 +2,7 @@
   "name": "qr-reader",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://traysimay.github.io/medlab-reader/",
+  "homepage": "https://reader.med--lab.org",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
