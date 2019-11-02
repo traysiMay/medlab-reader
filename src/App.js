@@ -80,6 +80,7 @@ function App() {
 
   const handleScan = data => {
     if (data) {
+      setQrMessage("")
       setResult(data);
     }
   };
@@ -112,7 +113,7 @@ function App() {
         <div style={{ textAlign: 'center', width: '80%', margin: 'auto' }}>
           <div style={{ color: messageStatus }}>{qrMessage}</div>
           <p>{result}</p>
-          <input onChange={(e) => setResult(e.target.value)} />
+          {/* <input onChange={(e) => setResult(e.target.value)} /> */}
           {result && <Button onClick={sendQR}>SENDIT</Button>}
         </div>
       </div>}
