@@ -1,5 +1,21 @@
 import styled from 'styled-components'
 
+export const Nav = styled.div`
+display:flex;
+justify-content:space-around;
+div {
+    border: 7px white solid;
+    width: 100%;
+    text-align: center;
+    background: black;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+`
+
 export const SearchInput = styled.input`
     width: 90%;
     display: block;
@@ -37,15 +53,19 @@ export const EmailLine = styled.div`
     }
 `
 export const ButtonContainer = styled.div`
-margin-top:10px;
+position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
 `
 export const Button = styled.button`
     background: black;
     color: white;
-    width: 330px;
+    width: 100%;
     height: 150px;
     text-align: center;
     display: block;
     margin: auto;
     font-size: 49px;
+    border: 13px white solid;
 `
