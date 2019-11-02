@@ -37,14 +37,15 @@ function App() {
       setEmails(emails.sort((a, b) => (a.email > b.email) ? 1 : -1))
     })
   }
-  const selectEmail = () => {
 
-  }
   const boopEmail = () => {
+    const raptor = selectedEmail.raptor.includes('raptor')
+    console.log(raptor)
     const options = { method: "POST", headers: { Authorization: "Bearer ".concat(token), "Content-Type": "application/json" }, body: JSON.stringify({ email: selectedEmail.email, raptor: selectedEmail.raptor }) };
     fetch(SERVER_ENDPOINT + '/rsvp/boopemail', options)
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         getAll()
       })
   }
@@ -122,7 +123,7 @@ function App() {
       {view === 'search' && <div><SearchInput placeholder="SEARCH" ref={searchRef} onChange={handleInput} />
         <EmailContainer>
           {emails.map((u, i) => {
-            if (u.email.includes(searchParam)) return <EmailLine key={u.email + i} onClick={(e) => setSelectedEmail({ email: e.target.innerHTML, raptor: e.target.className.split('raptor')[0] })} id={u.email === selectedEmail.email ? 'selected' : ''} className={u.raptorname ? 'raptor rsvp' : 'rsvp'} boop={u.boop ? 'line-through' : ''} >{u.email}</EmailLine>
+            if (u.email.includes(searchParam)) return <EmailLine key={u.email + i} onClick={(e) => setSelectedEmail({ email: e.target.innerHTML, raptor: e.target.className })} id={u.email === selectedEmail.email ? 'selected' : ''} className={u.raptorname ? 'raptor rsvp' : 'rsvp'} boop={u.boop ? 'line-through' : ''} >{u.email}</EmailLine>
           })}
         </EmailContainer>
         <ButtonContainer>
