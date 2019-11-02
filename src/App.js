@@ -39,7 +39,7 @@ function App() {
   }
 
   const boopEmail = () => {
-    const raptor = selectedEmail.raptor.includes('raptor')
+    const raptor = selectedEmail.raptor.includes('raptor') ? 'raptor' : ''
     console.log(raptor)
     const options = { method: "POST", headers: { Authorization: "Bearer ".concat(token), "Content-Type": "application/json" }, body: JSON.stringify({ email: selectedEmail.email, raptor: selectedEmail.raptor }) };
     fetch(SERVER_ENDPOINT + '/rsvp/boopemail', options)
